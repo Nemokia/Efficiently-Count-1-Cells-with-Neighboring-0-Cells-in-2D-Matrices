@@ -1,13 +1,38 @@
-quacktine
-  در خطوط اول، کتابخانه pandas را وارد میکند pandas برای کار با دادههای جدولی است.
-در ادامه دادههای ورودی را از کاربر میخواند. اولین خط شامل تعداد سطرها و ستونهای جدول است و n خط بعد شامل مقادیر سلولهای جدول هستند. مقادیر 0 و 1 نشان دهنده سلولهای سالم و آلوده هستند. دادههای ورودی را در یک رشته به نام input_data ذخیره میکند.
+ **README**
 
-•  در خط 16 تا 20، رشته input_data را به چندین خط تقسیم میکند و از اولین خط تعداد سطرها و ستونهای جدول را استخراج میکند. سپس با حلقه for، خطوط بعدی را به عنوان سطرهای جدول به یک لیست به نام data اضافه میکند.
+**Title:** Python Script for Counting 1-Cells with Neighboring 0-Cells in 2D Matrices
 
-•  در خط 22، لیست data را به یک شئ از کلاس DataFrame تبدیل میکند. DataFrame یک ساختمان داده جدولی است که در pandas تعریف شده است.
+**Author:** Nemat Kianezhad
 
-•  در خط 24، یک متغیر به نام count را با مقدار اولیه صفر شروع میکند. این متغیر نشان دهنده تعداد دیوارهای لازم برای قرنطینه کردن کاربران آلوده است.
+**Description:**
 
-•  در خط 25 تا 36، با دو حلقه for، همه سلولهای جدول را بررسی میکند. اگر سلول فعلی آلوده باشد (مقدار آن 1 باشد)، برای هر چهار جهت (بالا، پایین، راست، چپ)، اگر سلول همسایه قابل دسترس باشد (شماره سطر و ستون آن در بازه صحیح باشد) و سالم باشد (مقدار آن صفر باشد)، 1 به متغیر count اضافه میکند. این بدان معناست که بین سلول آلوده و سالم باید یک دیوار قرار داد.
+This Python script effectively counts the number of "1" cells within a 2D matrix that possess at least one adjacent "0" cell. It leverages the pandas library for data manipulation and employs a straightforward algorithm for cell evaluation.
 
-•  در خط 38، مقدار نهایی count را به عنوان خروجی چاپ میکند.
+**Key Features:**
+
+- User-friendly input mechanism for matrix dimensions and cell values.
+- Clear and concise code structure for readability and maintainability.
+- Efficient utilization of pandas for data management and analysis.
+
+**Installation:**
+
+1. Ensure Python is installed on your system ([https://www.python.org/downloads/](https://www.python.org/downloads/)).
+2. Install the pandas library using pip: `pip install pandas`
+
+**Usage:**
+
+1. Execute the script from your terminal: `python count_neighboring_cells.py`
+2. Follow the prompts to input the matrix dimensions and cell values.
+3. The script will output the count of qualifying "1" cells.
+
+**Future Enhancements:**
+
+- Integration of error handling routines for invalid input.
+- Exploration of potential performance optimizations for handling large-scale matrices.
+- Potential expansion to accommodate matrices with diverse value types.
+
+**Contributing:**
+
+Your contributions to this project are welcome! Feel free to submit issues and pull requests.
+
+
